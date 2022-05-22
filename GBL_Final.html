@@ -1,0 +1,45 @@
+<!DOCTYPE html encoding="UTF-8">
+
+<html>
+    <script>
+        function Copy(copyText) {
+            navigator.clipboard.writeText(copyText);
+            alert("Copied the text: " + copyText);
+        }
+    </script>
+    <head>
+        <title>General Biology Lab Final</title>
+    </head>
+    <body>
+        <h1>General Biology Lab Final</h1>
+        <h3>按按鈕可以直接複製，考慮去除彈出警示</h3>
+        <h2>SELECT</h2>
+        <ul>
+            <li><a class="level1" href="#Plants">Plants</a></li>
+            <li><a class="level1" href="#Algae">Algae</a></li>
+            <li><a class="level1" href="#Fungii">Fungii</a></li>
+        </ul>
+        <h2 id="Plants">Plants</h2>
+        <ul>
+            <li><a class="level2" href="#Egeria_densa">水蘊草</a><button class="button" onclick="Copy('水蘊草')">水蘊草</button></li>
+            <li><a class="level2" href="#Rhoeo_discolor">紫背萬年青</a><button class="button" onclick="Copy('紫背萬年青')">紫背萬年青</button></li>
+            <li><a class="level2" href="#Allium cepa">洋蔥</a><button class="button" onclick="Copy('洋蔥')">洋蔥</button></li>
+            <li><a class="level2" href="#Chromoplasts">雜色體</a><button class="button" onclick="Copy('chromoplast')">chromoplast</button></li>
+            <li><a class="level2" href="#Starch_grains">澱粉粒</a><button class="button" onclick="Copy('starch grain')">starch grain</button></li>
+            <li><a class="level2" href="#Crystals">結晶體</a><button class="button" onclick="Copy('crystal')">crystal</button></li>
+        </ul>
+        <h2 id="Egeria_densa">水蘊草<button class="button" onclick="Copy('水蘊草')">水蘊草</button></h2>
+        <img src="https://i.imgur.com/tl0iTmA.png" alt="Egeria_densa">
+        <ul>
+            <li>a.核質<button class="button" onclick="Copy('karyoplasm')">karyoplasm</button></li>
+            <li>b.核仁<button class="button" onclick="Copy('nucleolus')">nucleolus</button></li>
+            <li>c.細胞壁<button class="button" onclick="Copy('cell wall')">cell wall</button></li>
+            <li>d.液泡膜<button class="button" onclick="Copy('tonoplast')">tonoplast</button></li>
+            <li>e.細胞質<button class="button" onclick="Copy('cytoplasm')">cytoplasm</button></li>
+            <li>f.細胞核<button class="button" onclick="Copy('plasmalemma')">plasmalemma</button></li>
+            <li>g.液泡<button class="button" onclick="Copy('vacuole')">vacuole</button></li>
+            <li>h.葉綠體<button class="button" onclick="Copy('chloroplasts')">chloroplasts</button></li>
+            <li>i.中膠層<button class="button" onclick="Copy('middle lamella')">middle lamella</button></li>
+        </ul>
+    </body>
+</html>
