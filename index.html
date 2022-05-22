@@ -4,7 +4,6 @@
     <script>
         function Copy(copyText) {
             navigator.clipboard.writeText(copyText);
-            alert("Copied the text: " + copyText);
         }
     </script>
     <head>
@@ -13,6 +12,7 @@
     <body>
         <h1>General Biology Lab Final</h1>
         <h3>按按鈕可以直接複製，考慮去除彈出警示</h3>
+        <h3>回來請善用home鍵</h3>
         <h2>SELECT</h2>
         <ul>
             <li><a class="level1" href="#Plants">Plants</a></li>
@@ -21,25 +21,57 @@
         </ul>
         <h2 id="Plants">Plants</h2>
         <ul>
-            <li><a class="level2" href="#Egeria_densa">水蘊草</a><button class="button" onclick="Copy('水蘊草')">水蘊草</button></li>
+            <li><a class="level2" href="#Egeria_densa">水蘊草</a>&nbsp;<a href="#Egeria_densa_1">葉緣</a><button class="button" onclick="Copy('水蘊草')">水蘊草</button></li>
             <li><a class="level2" href="#Rhoeo_discolor">紫背萬年青</a><button class="button" onclick="Copy('紫背萬年青')">紫背萬年青</button></li>
-            <li><a class="level2" href="#Allium cepa">洋蔥</a><button class="button" onclick="Copy('洋蔥')">洋蔥</button></li>
+            <li><a class="level2" href="#Allium_cepa">洋蔥</a><button class="button" onclick="Copy('洋蔥')">洋蔥</button></li>
             <li><a class="level2" href="#Chromoplasts">雜色體</a><button class="button" onclick="Copy('chromoplast')">chromoplast</button></li>
-            <li><a class="level2" href="#Starch_grains">澱粉粒</a><button class="button" onclick="Copy('starch grain')">starch grain</button></li>
+            <li><a class="level2" href="#Starch_grains">澱粉粒</a><button class="button" onclick="Copy('starch grain')">starch&nbsp;grain</button></li>
             <li><a class="level2" href="#Crystals">結晶體</a><button class="button" onclick="Copy('crystal')">crystal</button></li>
         </ul>
-        <h2 id="Egeria_densa">水蘊草<button class="button" onclick="Copy('水蘊草')">水蘊草</button></h2>
-        <img src="images/Egeria_densa.png" alt="Egeria_densa">
+        <h2 id="Egeria_densa">水蘊草-表皮細胞<button class="button" onclick="Copy('水蘊草')">水蘊草</button><button class="button" onclick="Copy('epidermal cell')">epidermal&nbsp;cell</button></h2>
+        <img src="images/Egeria_densa.png" height="216px" width="179px" alt="Egeria_densa">
         <ul>
             <li>a.核質<button class="button" onclick="Copy('karyoplasm')">karyoplasm</button></li>
             <li>b.核仁<button class="button" onclick="Copy('nucleolus')">nucleolus</button></li>
-            <li>c.細胞壁<button class="button" onclick="Copy('cell wall')">cell wall</button></li>
+            <li>c.細胞壁<button class="button" onclick="Copy('cell wall')">cell&nbsp;wall</button></li>
             <li>d.液泡膜<button class="button" onclick="Copy('tonoplast')">tonoplast</button></li>
             <li>e.細胞質<button class="button" onclick="Copy('cytoplasm')">cytoplasm</button></li>
-            <li>f.細胞核<button class="button" onclick="Copy('plasmalemma')">plasmalemma</button></li>
-            <li>g.液泡<button class="button" onclick="Copy('vacuole')">vacuole</button></li>
+            <li>f.原生質膜<button class="button" onclick="Copy('plasmalemma')">plasmalemma</button></li>
+            <li>g.液泡<button class="button" onclick="Copy('vacuole')">vacuole</button><button class="button" onclick="Copy('central vacuole')">central&nbsp;vacuole</button></li>
             <li>h.葉綠體<button class="button" onclick="Copy('chloroplasts')">chloroplasts</button></li>
-            <li>i.中膠層<button class="button" onclick="Copy('middle lamella')">middle lamella</button></li>
+            <li>i.中膠層<button class="button" onclick="Copy('middle lamella')">middle&nbsp;lamella</button></li>
         </ul>
+        <h2 id="Egeria_densa_1">水蘊草-葉緣細胞<button class="button" onclick="Copy('水蘊草')">水蘊草</button><button class="button" onclick="Copy('leaf margin cell')">leaf&nbsp;margin&nbsp;cell</button></h2>
+        <img src="images/Egeria_densa_1.png" height="216px" width="282px" alt="水蘊草-葉緣細胞">
+        <ul>
+            <li>細胞核<button class="button" onclick="Copy('nucleus')" >nucleus</button></li>
+        </ul>
+        <h2 id="Rhoeo_discolor">紫背萬年青<button class="button" onclick="Copy('紫背萬年青')">紫背萬年青</button></h2>
+        <img src="images/Rhoeo_discolor.jpg" height="216px" width="291px" alt="Rhoeo_discolor">
+        <ul>
+            <li>質離現象<button class="button" onclick="Copy('plasmolysis')">plasmolysis</button></li>
+            <li>保衛細胞<button class="button" onclick="Copy('guard cell')">guard cell</button></li>
+            <li>液泡(含色素)<button class="button" onclick="Copy('vacuole')">vacuole</button><button class="button" onclick="Copy('anthocyanin')">花青素(英文)</button></li>
+        </ul>
+        <h2 id="Allium_cepa">洋蔥<button class="button" onclick="Copy('洋蔥')">洋蔥</button></h2>
+        <h3>染色方式</h3>
+        <table>
+            <tr>
+                <td><img src="images/Allium_cepa_undyed.jpg" height="216px" width="216px" alt="Allium_cepa_undyed"></td>
+                <td><img src="images/Allium_cepa_methylblue.jpg" height="216px" width="216px" alt="Allium_cepa_methylblue"></td>
+            </tr>
+            <tr>
+                <td><p align="center">未染色</p></td>
+                <td><button class="button" onclick="Copy('亞甲基藍')"  align="center">亞甲基藍</button><br><button class="button" onclick="Copy('methyl blue')"  align="center">methyl blue</button></td>
+            </tr>
+            <tr>
+                <td><img src="images/Allium_cepa_neutralred.jpg" height="216px" width="216px" alt="Allium_cepa_neutralred"></td>
+                <td><img src="images/Allium_cepa_eosin.jpg" height="216px" width="216px" alt="Allium_cepa_eosin.jpg"></td>
+            </tr>
+            <tr>
+                <td><button class="button" onclick="Copy('neutral red')"  align="center">neutral red</td>
+                <td><button class="button" onclick="Copy('eosin')"  align="center">eosin</td>
+            </tr>
+        </table>
     </body>
 </html>
