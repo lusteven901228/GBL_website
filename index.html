@@ -17,6 +17,7 @@
     </style>
     </head>
     <body>
+    <section id="headers">
         <h1>General Biology Lab Final</h1>
         <h3>按按鈕可以直接複製，考慮去除彈出警示</h3>
         <h3>回來請善用home鍵</h3>
@@ -26,7 +27,10 @@
             <li><a class="level1" href="#Algae">Algae</a></li>
             <li><a class="level1" href="#Fungi">Fungi</a></li>
             <li><a class="level1" href="#Lichen">Lichen</a></li>
+            <li><a class="level1" href="#Animals">Animals</a></li>
         </ul>
+    </section>
+    <section id="plant_section">
         <h2 id="Plants">Plants</h2>
         <ul>
             <li><a class="level2" href="#Egeria_densa">水蘊草現象</a>&nbsp;<a href="#Egeria_densa_0">表皮</a>&nbsp;<a href="#Egeria_densa_1">葉緣</a>&nbsp;<button onclick="Copy('水蘊草')">水蘊草</button></li>
@@ -139,14 +143,14 @@
             <li><a class="level2" href="#Euglenophyta">裸藻門</a>&nbsp;<button onclick="Copy('euglenophyta')">euglenophyta</button></li>
             <li><a class="level2" href="#Dinophyta">渦鞭毛藻(甲藻)門</a>&nbsp;<button onclick="Copy('dinophyta')">dinophyta</button></li>
             <li><a class="level2" href="#Bacillariophyta">矽藻門</a>&nbsp;<button onclick="Copy('bacillariophyta')">bacillariophyta</button></li>
-            <li><a class="level2" href="#Rhodophyta">紅藻門</a>&nbsp;<button onclick="Copy('rhodophyta')">rhodophyta</button></li>
             <li><a class="level2" href="#Phaenophyta">褐藻門</a>&nbsp;<button onclick="Copy('phaenophyta')">phaenophyta</button></li>
+            <li><a class="level2" href="#Rhodophyta">紅藻門</a>&nbsp;<button onclick="Copy('rhodophyta')">rhodophyta</button></li>
         </ul>
         <h2 id="Cyanophyta">藍綠藻門&nbsp;<button onclick="Copy('cyanophyta')">cyanophyta</button></h2>
         <ul>
             <li>Pigmentation:&nbsp;<button onclick="Copy('chlorophyll a')">chlorophyll a</button>&nbsp;<button onclick="Copy('carotenoid')">carotenoid</button>&nbsp;<button onclick="Copy('phycobilins')">phycobilins</button></li>
             <li>Food&nbsp;reserve&nbsp;藍藻澱粉&nbsp;<button onclick="Copy('cyanophycean starch')">cyanophycean&nbsp;starch</button></li>
-            <li>Reproduction:&nbsp;<button onclick="Copy('cell division')">cell division</button>&nbsp;<button class="hormogonia"></button></li>
+            <li>Reproduction:&nbsp;<button onclick="Copy('cell division')">cell division</button>&nbsp;<button onclick="Copy('hormogonia')">hormogonia</button></li>
             <li>肽聚醣&nbsp;<button onclick="Copy('peptidoglycan')">peptidoglycan</button></li>
         </ul>
         <table>
@@ -169,7 +173,7 @@
         <ul>
             <li>Pigmentation:&nbsp;<button onclick="Copy('chlorophyll a')">chlorophyll a</button>&nbsp;<button onclick="Copy('chlorophyll b')">chlorophyll b</button></li>
             <li>Food&nbsp;reserve&nbsp;澱粉核&nbsp;<button onclick="Copy('pyrenoid')">pyrenoid</button>&nbsp;(in <button onclick="Copy('chloroplast')">chloroplast</button>)</li>
-            <li>Reproduction:&nbsp;<button onclick="Copy('meiosis')">meiosis</button>&nbsp;<button class="hormogonia">hormogonia</button></li>
+            <li>Reproduction:&nbsp;<button onclick="Copy('meiosis')">meiosis</button>&nbsp;<button onclick="Copy('hormogonia')">hormogonia</button></li>
             <li>鞭毛&nbsp;<button onclick="Copy('flagella')">flagella</button></li>
         </ul>
         <table>
@@ -226,8 +230,8 @@
         <h2 id="Euglenophyta">裸藻門&nbsp;<button onclick="Copy('euglenophyta')">euglenophyta</button></h2>
         <ul>
             <li>Pigmentation:&nbsp;<button onclick="Copy('chlorophyll a')">chlorophyll a</button>&nbsp;<button onclick="Copy('chlorophyll b')">chlorophyll b</button></li>
-            <li>Food&nbsp;reserve&nbsp;眼蟲澱粉&nbsp;<button onclick="Copy('pyrenoid')">paramylon</button>&nbsp;(<b>NOT</b> in <button onclick="Copy('chloroplast')">chloroplast</button>)</li>
-            <li>Reproduction:&nbsp;<button onclick="Copy('asexual')">asexual</button>&nbsp;only&nbsp;<button class="bipartition">bipartition</button></li>
+            <li>Food&nbsp;reserve&nbsp;眼蟲澱粉&nbsp;<button onclick="Copy('paramylon')">paramylon</button>&nbsp;;<button onclick="Copy('pyrenoid')">pyrenoid</button>(<b>NOT</b> in <button onclick="Copy('chloroplast')">chloroplast</button>)</li>
+            <li>Reproduction:&nbsp;<button onclick="Copy('asexual')">asexual</button>&nbsp;only&nbsp;<button onclick="Copy('bipartition')">bipartition</button></li>
             <li><button onclick="Copy('unicellular')">unicellular</button>&nbsp;周皮&nbsp;<button onclick="Copy('periplast')">periplast</button></li>
         </ul>
         <table>
@@ -241,16 +245,97 @@
                 <td align="center" colspan="2">扁眼蟲屬&nbsp;<button onclick="Copy('Phacus')">Phacus</button><br><button onclick="Copy('flagellum')">flagellum</button>&nbsp;<button onclick="Copy('pellicle strips')">pellicle strips</button><br><button onclick="Copy('tail spine')">tail spine</button></td>
             </tr>
         </table>
-
-
+        <!-- bacillariophyta -->
+        <h2 id="Bacillariophyta">矽藻門&nbsp;<button onclick="Copy('bacillariophyta')">bacillariophyta</button></h2>
+        <ul>
+            <li>Pigmentation:&nbsp;<button onclick="Copy('chlorophyll a')">chlorophyll a</button>&nbsp;<button onclick="Copy('chlorophyll c')">chlorophyll c</button></li>
+            <li>Food&nbsp;reserve:&nbsp;金藻昆布多糖&nbsp;<button onclick="Copy('chrysolaminarin')">chrysolaminarin</button>&nbsp;&&nbsp;fat</li>
+            <li>Reproduction:&nbsp;primarily&nbsp;<button onclick="Copy('asexual')">asexual</button>&nbsp;by&nbsp;<button onclick="Copy('binary fission')">binary&nbsp;fission</button></li>
+            <li><button onclick="Copy('unicellular')">unicellular</button>&nbsp;</li>
+            <li>cell&nbsp;wall:&nbsp;<button onclick="Copy('silica')">silica</button></li>
+            <li>矽藻土&nbsp;<button onclick="Copy('diatomaceous earth')">diatomaceous earth</button></li>
+        </ul>
+        <table>
+            <tr>
+                <td colspan="2"><b>Two&nbsp;Major&nbsp;groups</b></td>
+            </tr>
+            <tr>
+                <td><img src="images/centric_diatoms.png" height="216" width="400" alt="centric diatoms"></td>
+                <td><img src="images/pennate_diatoms.png" height="216" width="400" alt="pennate diatoms"></td>
+            </tr>
+            <tr>
+                <td align="center">輻射對稱矽藻<button onclick="Copy('centric diatoms')">centric diatoms</button><br>小環藻&nbsp;<button onclick="Copy('Cyclotella')">Cyclotella</button><br>圓篩藻&nbsp;<button onclick="Copy('Coscinodiscus')">Coscinodiscus</button></td>
+                <td align="center">兩對稱矽藻<button onclick="Copy('pennate diatoms')">pennate diatoms</button><br>羽紋藻&nbsp;<button onclick="Copy('Pinnularia')">Pinnularia</button><br>斜紋藻&nbsp;<button onclick="Copy('Pleurosigma')">Pleurosigma</button><br>異極藻&nbsp;<button onclick="Copy('Gomphonema')">Gomphonema</button></td>
+            </tr>
+        </table>
+            <!--Pinnularia-->
+        <h3 id="Pinnularia">羽紋藻屬&nbsp;<button onclick="Copy('pinnularia')">pinnularia</button></h3>
+        <img src="images/Pinnularia.png" height="324" width="324" alt="pinnularia">
+        <ul>
+            <li><button onclick="Copy('girdle band')">girdle band</button></li>
+            <li><button onclick="Copy('hypotheca')">hypotheca</button></li>
+            <li><button onclick="Copy('epitheca')">epitheca</button></li>
+            <li><button onclick="Copy('plastid')">plastid</button></li>
+            <li><button onclick="Copy('nucleus')">nucleus</button></li>
+            <li><button onclick="Copy('raphe')">raphe</button></li>
+            <li><button onclick="Copy('oil droplet')">oil&nbsp;droplet</button></li>
+            <li><button onclick="Copy('valve view')">valve&nbsp;view</button></li>
+            <li><button onclick="Copy('girdle view')">girdle&nbsp;view</button></li>
+        </ul>
+        <h2 id="Dinophyta">渦鞭毛藻門&nbsp;<button onclick="Copy('dinophyta')">dinophyta</button></h2>
+        <ul>
+            <li>Pigmentation:&nbsp;<button onclick="Copy('chlorophyll a')">chlorophyll a</button>&nbsp;<button onclick="Copy('chlorophyll c')">chlorophyll c</button></li>
+            <li>Food&nbsp;reserve:&nbsp;<button onclick="Copy('starch')">starch</button></li>
+            <li>Reproduction:&nbsp;usually&nbsp;<button onclick="Copy('asexual')">asexual</button>&nbsp;by&nbsp;<button onclick="Copy('mitosis')">mitosis</button></li>
+            <li><button onclick="Copy('unicellular')">unicellular</button>&nbsp;</li>
+            <li>cell&nbsp;wall:&nbsp;<button onclick="Copy('cellulose plates')">cellulose&nbsp;plates</button>&nbsp;or&nbsp;None</li>
+            <li>紅潮<button onclick="Copy('red tide')">red tide</button></li>
+        </ul>
+        <h3 id="Peridinium">甲藻屬&nbsp;<button onclick="Copy('peridinium')">peridinium</button></h3>
+        <img src="images/peridinium.png" height="216" width="300" alt="peridinium">
+        <ul>
+            <li><button onclick="Copy('armored plates')">armored&nbsp;plates</button></li>
+            <li><button onclick="Copy('transverse groove')">transverse&nbsp;groove</button></li>
+            <li><button onclick="Copy('sulcus')">sulcus</button></li>
+            <li><button onclick="Copy('antapical horns')">antapical&nbsp;horns</button></li>
+            <li><button onclick="Copy('flagellum')">flagellum</button></li>
+        </ul>
+        <h3 id="Ceratium">角甲藻屬&nbsp;<button onclick="Copy('ceratium')">ceratium</button></h3>
+        <img src="images/ceratium.png" height="400" width="400" alt="ceratium">
+        <ul>
+            <li><button onclick="Copy('armored plates')">armored&nbsp;plates</button></li>
+            <li><button onclick="Copy('transverse groove')">transverse&nbsp;groove</button></li>
+            <li><button onclick="Copy('antapical horns')">antapical&nbsp;horns</button>(Unequal&nbsp;length)</li>
+        </ul>
+        <h2 id="Phaeophyta">褐藻門<button onclick="Copy('phaeophyta')">phaeophyta</button></h2>
+        <ul>
+            <li>Pigmentation:&nbsp;<button onclick="Copy('chlorophyll a')">chlorophyll a</button>&nbsp;<button onclick="Copy('chlorophyll c')">chlorophyll c</button></li>
+            <li>Food&nbsp;reserve:&nbsp;昆布多糖&nbsp;<button onclick="Copy('laminaran')">laminaran</button>&nbsp;甘露醇&nbsp;<button onclick="Copy('mannitol')">mannitol</button>&nbsp;<button onclick="Copy('fat droplets')">fat droplet</button></li>
+            <li><button onclick="Copy('alternation of generations')">alternation&nbsp;of&nbsp;generations</button></li>
+            <li><button onclick="Copy('multicellular')">multicellular</button>&nbsp;</li>
+        </ul>
+        <h3 id="Laminaria">海帶屬&nbsp;<button onclick="Copy('laminaria')">laminaria</button></h3>
+        <table>
+            <tr>
+                <img src="images/laminaria.png" height="300" width="150" alt="laminaria">
+                <img src="images/laminaria_1.png" height="300" width="300" alt="laminaria">
+                <img src="images/laminaria_2.png" height="300" width="300" alt="laminaria">
+            </tr>
+            <tr>
+                <td><button onclick="Copy('blade')">blade</button><br><button onclick="Copy('stipe')">stipe</button><br><button onclick="Copy('holdfast')">holdfast</button><br><button onclick="Copy('cross section')">cross&nbsp;section</button></td>
+                <td><button onclick="Copy('meristoderm')">meristoderm</button><br><button onclick="Copy('zoosporangia')">zoosporangia</button><br><button onclick="Copy('paraphyses')">paraphyses</button><br><button onclick="Copy('photosynthetic tissue')">photosynthetic&nbsp;tissue</button><br><button onclick="Copy('cortex')">cortex</button><br><button onclick="Copy('medulla')">medulla</button></td>
+                <td><button onclick="Copy('mucilaginous layer')">mucilaginous&nbsp;layer</button><br><button onclick="Copy('paraphysis')">paraphysis</button><br><button onclick="Copy('zoosporangium')">zoosporangium</button></td>
+        </table>
+        <h2 id="Rhodophyta">紅藻門&nbsp;<button onclick="Copy('rhodophyta')">rhodophyta</button></h2>
+        <h3>Good Luck</h3>
         <h2 id="Fungi">Fungi</h2>
         <ul>
             <li class="level2"><a href="#oomycota">卵菌</a>&nbsp;<button onclick="Copy('oomycota')">oomycota</button>&nbsp;<a href="#saprolegnia">水黴菌</a>&nbsp;<button onclick="Copy('saprolegnia')">saprolegnia</button></li>
             <li class="level2"><a href="#zygomycota">接合菌</a>&nbsp;<button onclick="Copy('zygomycota')">zygomycota</button>&nbsp;<a href="#rhizopus">黑黴菌</a>&nbsp;<button onclick="Copy('rhizopus')">rhizopus</button></li>
             <li class="level2"><a href="#ascomycota">子囊菌</a>&nbsp;<button onclick="Copy('ascomycota')">ascomycota</button>&nbsp;<a href="#peziza">盤菌</a>&nbsp;<button onclick="Copy('peziza')">peziza</button></li>
-            <li class="level2"><a href="#basidiomycota">擔子菌</a>&nbsp;<button onclick="Copy('basidiomycota')">basidiomycota</button>&nbsp;<a href="#coprinus">墨水菇</a>&nbsp;<button onclick="Copy('coprinus')">coprinus</button></li>
+            <li class="level2"><a href="#basidiomycota">擔子菌</a>&nbsp;<button onclick="Copy('basidiomycota')">basidiomycota</button>&nbsp;<a href="#coprinus">墨水菇</a>&nbsp;<button onclick="Copy('coprinus')">coprinus</button>&nbsp;<a href="#pore_fungi">pore fungi</a><button onclick="Copy('pore fungi')">pore&nbsp;fungi</button></li>
             <li class="level2"><a href="#deuteromycetes">不完全菌</a>&nbsp;<button onclick="Copy('deuteromycetes')">deuteromycetes</button>&nbsp;<a href="#penicillium">青黴菌</a>&nbsp;<button onclick="Copy('penicillium')">penicillium</button>&nbsp;<a href="#aspergillus">麴菌</a>&nbsp;<button onclick="Copy('aspergillus')">aspergillus</button></li>
-            <li class="level2"><a href="#Lichen">地衣</a>&nbsp;<button onclick="Copy('lichen')">lichen</button></li>
+            <li class="level2"><a href="#Lichen">地衣</a>&nbsp;<button onclick="Copy('lichen')">lichen</button>&nbsp;<a href="#apothecia">子囊盤</a>&nbsp;<button onclick="Copy('apothecia')">apothecia</button></li>
         </ul>
         <h2 id="oomycota">卵菌&nbsp;<button onclick="Copy('oomycota')">oomycota</button></h2>
         <h3 id="saprolegnia">水黴菌&nbsp;<button onclick="Copy('saprolegnia')">saprolegnia</button></h3>
@@ -266,6 +351,327 @@
                 <td align="center">多核菌絲(2n)<br><button onclick="Copy('coenocytic mycelia')">coenocytic mycelia</button></td>
             </tr>
         </table>
-
+        <h2 id="zygomycota">接合菌&nbsp;<button onclick="Copy('zygomycota')">zygomycota</button></h2>
+        <h3 id="rhizopus">黑黴菌&nbsp;<button onclick="Copy('rhizopus')">rhizopus</button></h3>
+        <table>
+            <tr>
+                <td><img src="images/rhizopus.png" height="216" width="216" alt="rhizopus"></td>
+                <td><img src="images/rhizopus_1.png" height="216" width="216" alt="rhizopus"></td>
+            </tr>
+            
+            <tr>
+                <td align="center">多核菌絲(2n)&nbsp;<button onclick="Copy('coenocytic mycelia')">coenocytic mycelia</button><br>no septum except<button onclick="Copy('gametangium')">gametangium</button><br>接合<button onclick="Copy('conjugation')">conjugation</button><br><button onclick="Copy('gametangia')">gametangia</button><br><button onclick="Copy('suspensor')">suspensor</button><br><button onclick="Copy('zygosporangium')">zygosporangium</button></td>
+                <td align="center"><button onclick="Copy('sporangia')">sporangia</button><br><button onclick="Copy('sporangiophore')">sporangiophore</button><br><button onclick="Copy('sporangiaspore')">sporangiaspore</button>&nbsp;(<button onclick="Copy('spore')">spore</button>)<br><button onclick="Copy('stolon')">stolon</button><br><button onclick="Copy('rhizoid')">rhizoid</button><br><button onclick="Copy('columella')">columella</button></td>
+            </tr>
+        </table>
+        <h2 id="ascomycota">子囊菌&nbsp;<button onclick="Copy('ascomycota')">ascomycota</button></h2>
+        <ul>
+            <li>少部分食用菇是子囊菌</li>
+            <li>septa&nbsp;has&nbsp;<button onclick="Copy('pores')">pores</button></li>
+            <li><button onclick="Copy('dikaryotic')">dikaryotic</button>&nbsp;stage(n+n)</li>
+            <li><button onclick="Copy('asexual')">asexual</button>&nbsp;reproduction:&nbsp;<button onclick="Copy('conidia')">conidia</button>&nbsp;or&nbsp;<button onclick="Copy('mitospores')">mitospores</button></li>
+            <li>產囊絲鉤:&nbsp;形成子囊的過渡構造&nbsp;<button onclick="Copy('crozier')">crozier</button></li>
+            <li>封閉型子囊果(子囊球)&nbsp;<button onclick="Copy('cleistothecium')">cleistothecium</button></li>
+            <li>瓶型子囊果(錐形瓶狀，子囊殼)&nbsp;<button onclick="Copy('perithecium')">perithecium</button></li>
+            <li>盤型子囊果(標本，子囊盤)&nbsp;<button onclick="Copy('apothecium')">apothecium</button></li>
+        </ul>
+        <h3 id="peziza">盤菌<button onclick="Copy('peziza')">peziza</button></h3>
+        <img src="images/peziza.png" height="216" width="216" alt="peziza"><img src="images/peziza_1.png" height="216" width="216" alt="peziza">
+        <ul>
+            <li><button onclick="Copy('paraphyses')">paraphyses</button></li>
+            <li><button onclick="Copy('ascus')">ascus</button></li>
+            <li><button onclick="Copy('ascospore')">ascospore</button>&nbsp;(8個一組)</li>
+            <li><button onclick="Copy('hymenium')">hymenium</button></li>
+            <li><button onclick="Copy('peridium')">peridium</button></li>
+            <li>菌絲&nbsp;<button onclick="Copy('hyphae')">hyphae</button></li>
+        </ul>
+        <h2 id="basidiomycota">擔子菌&nbsp;<button onclick="Copy('basidiomycota')">basidiomycota</button></h2>
+        <h3 id="coprinus">墨水菇&nbsp;<button onclick="Copy('coprinus')">coprinus</button></h3>
+        <img src="images/coprinus.png" height="216" width="216" alt="coprinus"><img src="images/coprinus_1.png" height="216" width="216" alt="coprinus">
+        <ul>
+            <li><button onclick="Copy('pileus')">pileus</button></li>
+            <li><button onclick="Copy('gills')">gills</button></li>
+            <li><button onclick="Copy('annulus')">annulus</button></li>
+            <li><button onclick="Copy('stipe')">stipe</button></li>
+            <li><button onclick="Copy('volva')">volva</button></li>
+            <li><button onclick="Copy('basidiospores')">basidiospores</button>&nbsp;(4個一組)</li>
+            <li><button onclick="Copy('basidium')">basidium</button></li>
+        </ul>
+        <h3 id="pore_fungi">pore fungi&nbsp;<button onclick="Copy('pore_fungi')">pore fungi</button></h3>
+        <img src="images/pore_fungi.png" height="216" width="216" alt="pore_fungi">
+        <ul>
+            <li><button onclick="Copy('hymenium')">hymenium</button>&nbsp;(跟盤菌一樣)</li>
+        </ul>
+        <h2 id="deuteromycetes">不完全菌&nbsp;<button onclick="Copy('deuteromycetes')">deuteromycetes</button></h2>
+        <h3 id="penicillium">青黴菌&nbsp;<button onclick="Copy('penicillium')">penicillium</button></h3>
+        <img src="images/penicillium.png" height="216" width="216" alt="penicillium">
+        <p>由小到大:
+            <ul>
+                <li><button onclick="Copy('conidium')">conidium</button></li>
+                <li><button onclick="Copy('sterigma')">sterigma</button></li>
+                <li><button onclick="Copy('conidiophore')">conidiophore</button></li>
+            </ul>
+        </p>
+        <h3 id="aspergillus">麴菌&nbsp;<button onclick="Copy('aspergillus')">aspergillus</button></h3>
+        <img src="images/aspergillus.png" height="216" width="216" alt="aspergillus"><img src="images/aspergillus_1.png" height="216" width="216" alt="aspergillus">
+        <ul>
+            <li><button onclick="Copy('conidiophore')">conidiophore</button></li>
+            <li><button onclick="Copy('conidium')">conidium</button></li>
+            <li><button onclick="Copy('sterigma')">sterigma</button>(在裡面)</li>
+            <li><button onclick="Copy('vescicle')">vescicle</button>(在裡面)</li>
+        </ul>
+        <h2 id="Lichen">地衣&nbsp;<button onclick="Copy('lichen')">lichen</button></h2>
+        <img src="images/lichen.png" height="216" width="216" alt="lichen">
+        <p>整片是<button onclick="Copy('thallus')">thallus</button><br>由上到下:
+            <ul>
+                <li><button onclick="Copy('upper cortex')">upper cortex</button></li>
+                <li><button onclick="Copy('algal layer')">algal layer</button></li>
+                <li><button onclick="Copy('medulla')">medulla</button></li>
+                <li><button onclick="Copy('lower cortex')">lower cortex</button></li>
+            </ul>
+        </p>
+        <h3 id="apothecia">子囊盤&nbsp;<button onclick="Copy('apothecia')">apothecia</button></h3>
+        <img src="images/apothecia.png" height="216" width="216" alt="apothecia">
+        <p>整片是<button onclick="Copy('apothecium')">apothecium</button><br>由上到下:
+            <ul>
+                <li><button onclick="Copy('ascus')">ascus</button></li>
+                <li><button onclick="Copy('upper cortex')">upper cortex</button>(ascus下)</li>
+                <li><button onclick="Copy('algal layer')">algal layer</button>(中間疏鬆綠色組織)</li>
+                <li><button onclick="Copy('medulla')">medulla</button>(更疏鬆的組織)</li>
+                <li><button onclick="Copy('lower cortex')">lower cortex</button>(就是在下面的cortex)</li>
+            </ul>
+        </p>
+    </section>
+    <section class="Animals">
+        <h2>感覺與神經</h2>
+        <ul>
+            <li><a href="#brain_development">腦的發育</a><button onclick="Copy('brain development')">brain&nbsp;development</button></li>
+            <li><a href="#fish_brain">魚腦</a><button onclick="Copy('fish brain')">fish&nbsp;brain</button></li>
+            <li><a href="#amphibian_brain">蛙腦</a><button onclick="Copy('amphibian brain')">amphibian&nbsp;brain</button></li>
+            <li><a href="#turtle_brain">龜腦</a><button onclick="Copy('turtle brain')">turtle&nbsp;brain</button></li>
+            <li><a href="#reptile_brain">爬蟲類腦</a><button onclick="Copy('reptile brain')">reptile&nbsp;brain</button></li>
+            <li><a href="#bird_brain">鴿腦</a><button onclick="Copy('bird brain')">bird&nbsp;brain</button></li>
+            <li><a href="#rabbit_brain">兔腦</a><button onclick="Copy('rabbit brain')">rabbit&nbsp;brain</button></li>
+            <li><a href="#rat_brain">鼠腦</a><button onclick="Copy('rat brain')">rat&nbsp;brain</button></li>
+            <li><a href="#ventricle">腦室</a><button onclick="Copy('ventricle')">ventricle</button></li>
+            <li><a href="#limbic_system">邊緣系統</a><button onclick="Copy('limbic system')">limbic&nbsp;system</button></li>
+            <li><a href="#neuro_tests">各種測試</a><button onclick="Copy('neuro_tests')">neuro&nbsp;tests</button></li>
+            <li><a href="#development">發生</a><button onclick="Copy('development')">development</button></li>
+        </ul>
+        <h2 id="brain_development">腦的發育</h2>
+        <img src="images/brain_development.png" height="300" width="600" alt="brain_development">
+        <ul>
+            <li><button onclick="Copy('prosencephalon')">prosencephalon</button></li>
+            <li><button onclick="Copy('mesencephalon')">mesencephalon</button></li>
+            <li><button onclick="Copy('rhombencephalon')">rhombencephalon</button></li>
+            <li><button onclick="Copy('telencephalon')">telencephalon</button></li>
+            <li><button onclick="Copy('diencephalon')">diencephalon</button></li>
+            <li><button onclick="Copy('metencephalon')">metencephalon</button></li>
+            <li><button onclick="Copy('myelencephalon')">myelencephalon</button></li>
+            <li><button onclick="Copy('cerebrum')">cerebrum</button>&nbsp;(端)</li>
+            <li><button onclick="Copy('basal nuclei')">basal&nbsp;nuclei</button>&nbsp;(端)</li>
+            <li><button onclick="Copy('lateral ventricle')">lateral&nbsp;ventricle</button>&nbsp;(端)</li>
+            <li><button onclick="Copy('thalamus')">thalamus</button>&nbsp;(間)</li>
+            <li><button onclick="Copy('hypothalamus')">hypothalamus</button>&nbsp;(間)</li>
+            <li><button onclick="Copy('pineal gland')">pineal&nbsp;gland</button>&nbsp;(間)</li>
+            <li><button onclick="Copy('third ventricle')">third&nbsp;ventricle</button>&nbsp;(間)</li>
+            <li><button onclick="Copy('tectem')">tectem</button>&nbsp;(中)</li>
+            <li><button onclick="Copy('Corpora quadrigemina')">Corpora&nbsp;quadrigemina</button>&nbsp;(中)</li>
+            <li><button onclick="Copy('Cerebral aqueduct')">Cerebral&nbsp;aqueduct</button>&nbsp;(中)</li>
+            <li><button onclick="Copy('pons')">pons</button>&nbsp;(後)</li>
+            <li><button onclick="Copy('cerebellum')">cerebellum</button>&nbsp;(後)</li>
+            <li><button onclick="Copy('medulla')">medulla</button>&nbsp;(medulla oblongata)</li>
+            <li><button onclick="Copy('fourth ventricle')">fourth&nbsp;ventricle</button>&nbsp;(後+髓)</li>        
+        </ul>
+        <h2 id="fish_brain">魚腦&nbsp;<button onclick="Copy('fish')">fish</button></h2>
+        <img src="images/fish_brain.png" height="216" width="300" alt="fish_brain">
+        <img src="images/fish_brain_1.png" height="240" width="300" alt="fish_brain_1">
+        <img src="images/fish_brain_2.png" height="300" width="500"alt="fish_brain_2">
+        <h3>特徵: 前面有olfactory tract, 視葉小腦vagus lobe像五顆球(?</h3>
+        <ul>
+            <li><button onclick="Copy('olfactory bulb')">olfactory&nbsp;bulb</button>&nbsp;(telen)</li>
+            <li><button onclick="Copy('olfactory tract')">olfactory&nbsp;tract</button></li>
+            <li><button onclick="Copy('optic nerve')">optic&nbsp;nerve</button></li>
+            <li><button onclick="Copy('cerebrum')">cerebrum</button>&nbsp;(telen)</li>
+            <li><button onclick="Copy('diencephalon')">diencephalon</button>&nbsp;(在視葉前面，埋在裡面的感覺)</li>
+            <li><button onclick="Copy('pineal gland')">pineal&nbsp;gland</button>&nbsp;(dien, 考實體圖應該不會有)</li>
+            <li><button onclick="Copy('optic lobe')">optic&nbsp;lobe</button>&nbsp;(mesen)</li>
+            <li><button onclick="Copy('cerebellum')">cerebellum</button>&nbsp;(meten)</li>
+            <li><button onclick="Copy('vagus lobe')">vagus&nbsp;lobe</button>&nbsp;(myelen, 味覺相關)</li>
+            <li><button onclick="Copy('medulla')">medulla</button>&nbsp;(myelen)</li>
+            <li><button onclick="Copy('spinal cord')">spinal&nbsp;cord</button></li>
+        </ul>
+        <h2 id="amphibian_brain">蛙腦&nbsp;<button onclick="Copy('amphibian')">amphibian</button></h2>
+        <img src="images/amphibian_brain" height="300" width="300" alt="amphibian_brain">
+        <img src="images/amphibian_brain_1.png" height="350" width="150" alt="amphibian_brain"><img src="images/amphibian_brain_2.png" height="350" width="270" alt="amphibian_brain">
+        <h3>特徵: olfactory bulb前面有鬚狀</h3>
+        <ul>
+            <li><button onclick="Copy('olfactory bulb')">olfactory&nbsp;bulb</button>&nbsp;(telen)</li>
+            <li><button onclick="Copy('olfactory tract')">olfactory&nbsp;tract</button></li>
+            <li><button onclick="Copy('cerebrum')">cerebrum</button>&nbsp;(telen)</li>
+            <li><button onclick="Copy('diencephalon')">diencephalon</button>&nbsp;(背面觀會被遮住大部分，視葉前面)</li>
+            <li><button onclick="Copy('optic lobe')">optic&nbsp;lobe</button>&nbsp;(mesen)</li>
+            <li><button onclick="Copy('cerebellum')">cerebellum</button>&nbsp;(meten)</li>
+            <li><button onclick="Copy('vagus lobe')">vagus&nbsp;lobe</button>&nbsp;(myelen, 味覺相關)</li>
+            <li><button onclick="Copy('fourth ventricle')">fourth&nbsp;ventricle</button>&nbsp;(meten+myelen,對照人的:背側為小腦，腹側為橋腦和延髓，又稱菱形窩)</li>
+            <li><button onclick="Copy('medulla')">medulla</button>&nbsp;(myelen)</li>
+            <li><button onclick="Copy('spinal cord')">spinal&nbsp;cord</button></li>
+        </ul>
+        <!-- 龜腦(turtle) -->
+        <h2 id="turtle_brain">龜腦&nbsp;<button onclick="Copy('turtle')">turtle</button></h2>
+        <img src="images/reptile_brain.png" height="300" width="400" alt="reptile_brain">
+        <ul>
+            <li><button onclick="Copy('olfactory bulb')">olfactory&nbsp;bulb</button>&nbsp;</li>
+            <li><button onclick="Copy('olfactory bulb')">olfactory&nbsp;bulb</button>&nbsp;(telen)</li>
+            <li><button onclick="Copy('olfactory tract')">olfactory&nbsp;tract</button></li>
+            <li><button onclick="Copy('optic nerve')">optic&nbsp;nerve</button></li>
+            <li><button onclick="Copy('cerebrum')">cerebrum</button>&nbsp;(telen)</li>
+            <li><button onclick="Copy('diencephalon')">diencephalon</button>&nbsp;(背面觀會被遮住大部分，視葉下面)</li>
+            <li><button onclick="Copy('pineal gland')">pineal&nbsp;gland</button>&nbsp;</li>
+            <li><button onclick="Copy('optic lobe')">optic&nbsp;lobe</button>&nbsp;(mesen)</li>
+            <li><button onclick="Copy('cerebellum')">cerebellum</button>&nbsp;(meten)</li>
+            <li><button onclick="Copy('medulla')">medulla</button>&nbsp;(myelen)</li>
+            <li><button onclick="Copy('spinal cord')">spinal&nbsp;cord</button></li>
+        </ul>
+        <h2 id="reptile_brain">爬蟲類腦(?不知道哪種)&nbsp;<button onclick="Copy('reptile')">reptile</button></h2>
+        <img src="images/reptile_brain_1.png" height="350" width="450" alt="reptile_brain_1">
+        <ul>
+            <li><button onclick="Copy('optic chiasma')">optic&nbsp;chiasma</button></li>
+            <li><button onclick="Copy('cerebrum')">cerebrum</button>&nbsp;(telen)</li>
+            <li><button onclick="Copy('diencephalon')">diencephalon</button>&nbsp;(背面觀會被遮住大部分，視葉下面)</li>
+            <li><button onclick="Copy('pineal gland')">pineal&nbsp;gland</button></li>
+            <li><button onclick="Copy('optic lobe')">optic&nbsp;lobe</button>&nbsp;(mesen)</li>
+            <li><button onclick="Copy('cerebellum')">cerebellum</button>&nbsp;(meten)</li>
+            <li><button onclick="Copy('medulla')">medulla</button>&nbsp;(myelen)</li>
+            <li><button onclick="Copy('spinal cord')">spinal&nbsp;cord</button></li>
+        </ul>
+        <!-- 鴿腦(bird) -->
+        <h2 id="bird_brain">鴿腦&nbsp;<button onclick="Copy('bird')">bird</button></h2>
+        <img src="images/bird_brain.png" height="300" width="400" alt="bird_brain">
+        <img src="images/bird_brain_1.png" height="350" width="500" alt="bird_brain_1">
+        <img src="images/bird_brain_2.png" height="100" width="350" alt="bird_brain_2">
+        <h3>特徵: 栗子形大腦，超大小腦，超大視葉</h3>
+        <ul>
+            <li><button onclick="Copy('optic nerve')">optic&nbsp;nerve</button></li>
+            <li><button onclick="Copy('cerebrum')">cerebrum</button>&nbsp;(telen)</li>
+            <li><button onclick="Copy('diencephalon')">diencephalon</button>&nbsp;(背面觀會被遮住大部分，視葉下面)</li>
+            <li><button onclick="Copy('pineal gland')">pineal&nbsp;gland</button></li>
+            <li><button onclick="Copy('optic lobe')">optic&nbsp;lobe</button>&nbsp;(mesen)</li>
+            <li><button onclick="Copy('cerebellum')">cerebellum</button>&nbsp;(meten)</li>
+            <li><button onclick="Copy('medulla')">medulla</button>&nbsp;(myelen)</li>
+            <li><button onclick="Copy('spinal cord')">spinal&nbsp;cord</button></li>
+        </ul>
+        <!-- 兔腦(rabbit) -->
+        <h2 id="rabbit_brain">兔腦&nbsp;<button onclick="Copy('rabbit')">rabbit</button></h2>
+        <img src="images/rabbit_brain.png" height="300" width="500" alt="rabbit_brain">
+        <h3>特徵: 眼睛是白的(?)反正就長得很特別==</h3>
+        <ul>
+            <li><button onclick="Copy('olfactory bulb')">olfactory&nbsp;bulb</button></li>
+            <li><button onclick="Copy('optic nerve')">optic&nbsp;nerve</button></li>
+            <li><button onclick="Copy('optic chiasma')">optic&nbsp;chiasma</button>&nbsp;(圖上拼錯了)</li>
+            <li><button onclick="Copy('diencephalon')">diencephalon</button></li>
+            <li><button onclick="Copy('pituitary gland')">pituitary&nbsp;gland</button>(hypothalamus下面)</li>
+            <li><button onclick="Copy('crus cerebrum')">crus&nbsp;cerebrum</button>(我真的不知道這什麼)</li>
+            <li><button onclick="Copy('pons')">pons</button>(meten, 哺乳類沒有視葉有橋腦)</li>
+            <li><button onclick="Copy('pyramid')">pyramid</button>(皮質脊髓束，medulla上靠近中軸的兩塊白質)</li>
+            <li><button onclick="Copy('cerebrum')">cerebrum</button>&nbsp;(telen)</li>
+            <li><button onclick="Copy('tectem')">tectem</button>&nbsp;(mesen)</li>
+            <li><button onclick="Copy('diencephalon')">diencephalon</button>&nbsp;(腹面觀才有)</li>
+            <li><button onclick="Copy('cerebellum')">cerebellum</button>&nbsp;(meten)</li>
+            <li><button onclick="Copy('medulla')">medulla</button>&nbsp;(myelen)</li>
+            <li><button onclick="Copy('spinal cord')">spinal&nbsp;cord</button></li>
+        </ul>
+        <!-- 鼠腦(rat) -->
+        <h2 id="rat_brain">鼠腦&nbsp;<button onclick="Copy('rat')">rat</button></h2>
+        <img src="images/rat_brain.png" height="216" width="450" alt="rat_brain">
+        <img src="images/rat_brain_1.png" height="216" width="450" alt="rat_brain_1">
+        <img src="images/rat_brain_2.png" height="216" width="216" alt="rat_brain_2"><img src="images/rat_brain_3.png" height="216" width="216" alt="rat_brain_3">
+        <ul>
+            <li><button onclick="Copy('olfactory bulb')">olfactory&nbsp;bulb</button></li>
+            <li><button onclick="Copy('optic chiasma')">optic&nbsp;chiasma</button></li>
+            <li><button onclick="Copy('diencephalon')">diencephalon</button></li>
+            <li><button onclick="Copy('midbrain')">midbrain</button></li>
+            <li><button onclick="Copy('pons')">pons</button>&nbsp;(meten, 哺乳類沒有視葉有橋腦)</li>
+            <li><button onclick="Copy('pyramid')">pyramid</button>&nbsp;(皮質脊髓束，medulla上靠近中軸的兩塊白質)</li>
+            <li><button onclick="Copy('cerebrum')">cerebrum</button>&nbsp;(telen)</li>
+            <li><button onclick="Copy('pineal gland')">pineal&nbsp;gland</button></li>
+            <li><button onclick="Copy('Corpora quadrigemina')">Corpora&nbsp;quadrigemina</button>&nbsp;(mesen)</li>
+            <li><button onclick="Copy('corpus callosum')">corpus&nbsp;callosum</button></li>
+            <li><button onclick="Copy('cerebellum')">cerebellum</button>&nbsp;(meten)</li>
+            <li><button onclick="Copy('medulla')">medulla</button>&nbsp;(myelen)</li>
+            <li><button onclick="Copy('spinal cord')">spinal&nbsp;cord</button></li>
+        </ul>
+        <h2 id="ventricle">腦室(人vs鼠)</h2>
+        <img src="images/ventricle.png" height="400" width="400" alt="ventricle"><img src="images/ventricle_1.png" height="400" width="350" alt="ventricle_1">
+        <ul>
+            <li><button onclick="Copy('lateral ventricle')">lateral&nbsp;ventricle</button></li>
+            <li><button onclick="Copy('third ventricle')">third&nbsp;ventricle</button></li>
+            <li><button onclick="Copy('fourth ventricle')">fourth&nbsp;ventricle</button></li>
+            <li><button onclick="Copy('cerebral aqueduct')">cerebral&nbsp;aqueduct</button></li>
+        </ul>
+        <h2 id="limbic_system">邊緣系統(人腦vs鼠腦)</h2>
+        <img src="images/limbic_system.png" height="150" width="300" alt="limbic_system"><img src="images/limbic_system_1.png" height="150" width="400" alt="limbic_system_1">
+        <img src="images/limbic_system_2.png" height="216" width="300" alt="limbic_system_2"><img src="images/limbic_system_3.png" height="216" width="300" alt="limbic_system_3">
+        <ul>
+            <li><button onclick="Copy('hippocampus')">hippocampus</button></li>
+            <li><button onclick="Copy('basal nuclei')">basal&nbsp;nuclei</button></li>
+            <li><button onclick="Copy('hypothalamus')">hypothalamus</button></li>
+            <li><button onclick="Copy('corpus callosum')">corpus&nbsp;callosum</button></li>
+            <li><button onclick="Copy('cortex')">cortex</button></li>
+            <li><button onclick="Copy('3rd ventricle')">3rd&nbsp;ventricle</button></li>
+            <li><button onclick="Copy('4th ventricle')">4th&nbsp;ventricle</button></li>
+            <li><button onclick="Copy('lateral ventricle')">lateral&nbsp;ventricle</button></li>
+        </ul>
+        <h2 id="neuro_tests">各種測試</h2>
+        <ul>
+            <li><button onclick="Copy('眼睛構造')">眼睛構造</button></li>
+            <li><button onclick="Copy('盲點算法')">盲點算法</button></li>
+            <li><button onclick="Copy('近點')">近點</button></li>
+            <li><button onclick="Copy('優勢眼')">優勢眼</button></li>
+            <li><button onclick="Copy('weber test')">weber&nbsp;test</button></li>
+            <li><button onclick="Copy('觸覺敏銳度')">觸覺敏銳度</button></li>
+            <li><button onclick="Copy('牽張反射-膝跳')">牽張反射-膝跳</button></li>
+            <li><button onclick="Copy('牽張反射-肱三頭肌')">牽張反射-肱三頭肌</button></li>
+            <li><button onclick="Copy('牽張反射-踝反射')">牽張反射-踝反射</button></li>
+            <li><button onclick="Copy('蹠反射')">蹠反射</button></li>
+        </ul>
+        <h2 id="development">發生</h2>
+    <ul>
+        <li><button onclick="Copy('cleavage')">cleavage</button></li>
+        <ul>
+            <li><button onclick="Copy('2-cell stage')">2-cell&nbsp;stage</button></li>
+            <li><button onclick="Copy('4-cell stage')">4-cell&nbsp;stage</button></li>
+            <li><button onclick="Copy('8-cell stage')">8-cell&nbsp;stage</button></li>
+            <li><button onclick="Copy('16-cell stage')">16-cell&nbsp;stage</button></li>
+            <li><button onclick="Copy('morula')">morula</button></li>
+        </ul>
+        <li><button onclick="Copy('animal pole')">animal&nbsp;pole</button></li>
+        <li><button onclick="Copy('vegetal pole')">vegetal&nbsp;pole</button></li>
+        <li><button onclick="Copy('micromere')">micromere</button></li>
+        <li><button onclick="Copy('macromere')">macromere</button></li>
+        <li><button onclick="Copy('blastula')">blastula</button></li>
+        <li><button onclick="Copy('early gastrula')">early&nbsp;gastrula</button></li>
+        <li><button onclick="Copy('mid gastrula')">mid&nbsp;gastrula</button></li>
+        <li><button onclick="Copy('late gastrula')">late&nbsp;gastrula</button></li>
+        <li><button onclick="Copy('ectoderm')">ectoderm</button></li>
+        <li><button onclick="Copy('mesoderm')">mesoderm</button></li>
+        <li><button onclick="Copy('endoderm')">endoderm</button></li>
+        <li><button onclick="Copy('archenteron')">archenteron</button></li>
+        <li><button onclick="Copy('blastocoel')">blastocoel</button></li>
+        <li><button onclick="Copy('blastopore')">blastopore</button></li>
+        <li><button onclick="Copy('ventral lip')">ventral&nbsp;lip</button></li>
+        <li><button onclick="Copy('dorsal lip')">dorsal&nbsp;lip</button></li>
+        <li><button onclick="Copy('yolk plug')">yolk&nbsp;plug</button></li>
+        <li><button onclick="Copy('neural groove')">neural&nbsp;groove</button></li>
+        <li><button onclick="Copy('neural fold')">neural&nbsp;fold</button></li>
+        <li><button onclick="Copy('neural plate')">neural&nbsp;plate</button></li>
+        <li><button onclick="Copy('somite')">somite</button></li>
+        <li><button onclick="Copy('notochord')">notochord</button></li>
+        <li><button onclick="Copy('midgut')">midgut</button></li>
+        <li><button onclick="Copy('epidermis')">epidermis</button></li>
+        <li><button onclick="Copy('spinal cord')">spinal&nbsp;cord</button></li>
+    </ul>
+    </section>
     </body>
+
 </html>
