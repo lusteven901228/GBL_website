@@ -12,5 +12,6 @@
 - images/ (資料夾)
 - index.html
 - README.md
+- copy_check.py (我拿來確認用的，不用理他)
 ### 3.用瀏覽器打開index.html
 記得按按鈕可以複製
