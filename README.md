@@ -1,5 +1,5 @@
 ## 網站
-[https://lusteven901228.github.io/](https://lusteven901228.github.io/)
+[https://lusteven901228.github.io/GBL_website/](https://lusteven901228.github.io/GBL_website/)
 ## 普生實大抄下載方式
 #### 為了減少網路不穩定的不確定性
 ### 1.下載
